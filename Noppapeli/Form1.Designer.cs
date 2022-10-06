@@ -62,6 +62,7 @@ namespace Noppapeli
             this.buttonChance = new System.Windows.Forms.Button();
             this.buttonFullHouse = new System.Windows.Forms.Button();
             this.buttonSum = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -303,6 +304,7 @@ namespace Noppapeli
             this.buttonLargeStraight.Size = new System.Drawing.Size(59, 32);
             this.buttonLargeStraight.TabIndex = 28;
             this.buttonLargeStraight.UseVisualStyleBackColor = true;
+            this.buttonLargeStraight.Click += new System.EventHandler(this.buttonLargeStraight_Click);
             // 
             // buttonSmallStraight
             // 
@@ -362,6 +364,7 @@ namespace Noppapeli
             this.buttonYatzy.Size = new System.Drawing.Size(59, 32);
             this.buttonYatzy.TabIndex = 31;
             this.buttonYatzy.UseVisualStyleBackColor = true;
+            this.buttonYatzy.Click += new System.EventHandler(this.buttonYatzy_Click);
             // 
             // buttonChance
             // 
@@ -371,6 +374,7 @@ namespace Noppapeli
             this.buttonChance.Size = new System.Drawing.Size(59, 32);
             this.buttonChance.TabIndex = 30;
             this.buttonChance.UseVisualStyleBackColor = true;
+            this.buttonChance.Click += new System.EventHandler(this.buttonChance_Click);
             // 
             // buttonFullHouse
             // 
@@ -380,6 +384,7 @@ namespace Noppapeli
             this.buttonFullHouse.Size = new System.Drawing.Size(59, 32);
             this.buttonFullHouse.TabIndex = 29;
             this.buttonFullHouse.UseVisualStyleBackColor = true;
+            this.buttonFullHouse.Click += new System.EventHandler(this.buttonFullHouse_Click);
             // 
             // buttonSum
             // 
@@ -391,11 +396,22 @@ namespace Noppapeli
             this.buttonSum.TabIndex = 32;
             this.buttonSum.UseVisualStyleBackColor = true;
             // 
+            // buttonReset
+            // 
+            this.buttonReset.Location = new System.Drawing.Point(650, 38);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.TabIndex = 33;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonSum);
             this.Controls.Add(this.buttonYatzy);
             this.Controls.Add(this.buttonChance);
@@ -471,6 +487,7 @@ namespace Noppapeli
         private System.Windows.Forms.Button buttonChance;
         private System.Windows.Forms.Button buttonFullHouse;
         private System.Windows.Forms.Button buttonSum;
+        private System.Windows.Forms.Button buttonReset;
     }
 }
 
